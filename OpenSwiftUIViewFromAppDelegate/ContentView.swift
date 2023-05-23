@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    @ObservedObject var appState = AppState.shared
+    @State var navigate = false
+    
+    var pushNavigationBinding: Binding<Bool> {
+        .init { () -> Bool in
+            appState.pageToNavigationTo != nil
+        } set: { (newValue) in
+            if !newValue {
+                appState.pageToNavigationTo = nil
+            }
         }
-        .padding()
+
+    }
+    
+    var body: some View {
+        NavigationView {
+            Text("My content")
+                .overlay(NavigationLink(destination:
+                                            Dest(message: appState.pageToNavigationTo ?? ""),
+                                        isActive: pushNavigationBinding) {
+                    EmptyView()
+                })
+        }
     }
 }
 
