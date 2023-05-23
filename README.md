@@ -15,4 +15,4 @@ Once you've hooked up an AppDelegate into your SwiftUI app, you'll need the foll
 
 ## Credit
 
-[Stack Overflow: SwiftUI - Open a specific View when user opens a Push Notification](https://stackoverflow.com/a/66284621/616933)
+[Stack Overflow: SwiftUI - Open a specific View when user opens a Push Notification](https://stackoverflow.com/a/66284621/616933) works with iOS 15 and earlier
