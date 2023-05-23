@@ -13,10 +13,10 @@ struct ContentView: View {
     
     var pushNavigationBinding: Binding<Bool> {
         .init { () -> Bool in
-            appState.pageToNavigationTo != nil
+            appState.navigateToView != nil
         } set: { (newValue) in
             if !newValue {
-                appState.pageToNavigationTo = nil
+                appState.navigateToView = nil
             }
         }
 
@@ -26,7 +26,7 @@ struct ContentView: View {
         NavigationView {
             Text("My content")
                 .overlay(NavigationLink(destination:
-                                            Dest(message: appState.pageToNavigationTo ?? ""),
+                                            Dest(message: appState.navigateToView ?? ""),
                                         isActive: pushNavigationBinding) {
                     EmptyView()
                 })

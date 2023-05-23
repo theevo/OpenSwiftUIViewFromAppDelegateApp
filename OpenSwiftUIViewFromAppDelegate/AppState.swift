@@ -9,5 +9,5 @@ import Foundation
 
 class AppState: ObservableObject {
     static let shared = AppState()
-    @Published var pageToNavigationTo: String?
+    @Published var navigateToView: String?
 }
