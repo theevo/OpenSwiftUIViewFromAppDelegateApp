@@ -50,6 +50,7 @@
 		ACE94FB92A1D2B4C0028E20B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		ACE94FBB2A1D2BA40028E20B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACE94FBD2A1D35980028E20B /* Dest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dest.swift; sourceTree = "<group>"; };
+		ACE94FBF2A1D37AB0028E20B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		ACE94F832A1D2B0C0028E20B = {
 			isa = PBXGroup;
 			children = (
+				ACE94FBF2A1D37AB0028E20B /* README.md */,
 				ACE94F8E2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegate */,
 				ACE94F9F2A1D2B0D0028E20B /* OpenSwiftUIViewFromAppDelegateTests */,
 				ACE94FA92A1D2B0D0028E20B /* OpenSwiftUIViewFromAppDelegateUITests */,
