@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC7CC64D2A1EA988007EF962 /* OnReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CC64C2A1EA988007EF962 /* OnReceiveView.swift */; };
 		ACE94F902A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94F8F2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift */; };
 		ACE94F922A1D2B0C0028E20B /* DeprecatedNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94F912A1D2B0C0028E20B /* DeprecatedNavigationView.swift */; };
 		ACE94F942A1D2B0D0028E20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE94F932A1D2B0D0028E20B /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC7CC64C2A1EA988007EF962 /* OnReceiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnReceiveView.swift; sourceTree = "<group>"; };
 		ACE94F8C2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSwiftUIViewFromAppDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE94F8F2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSwiftUIViewFromAppDelegateApp.swift; sourceTree = "<group>"; };
 		ACE94F912A1D2B0C0028E20B /* DeprecatedNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedNavigationView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				ACE94F8F2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift */,
 				ACE94FB92A1D2B4C0028E20B /* AppState.swift */,
 				ACE94FBB2A1D2BA40028E20B /* AppDelegate.swift */,
+				AC7CC64C2A1EA988007EF962 /* OnReceiveView.swift */,
 				ACE94F912A1D2B0C0028E20B /* DeprecatedNavigationView.swift */,
 				ACE94FBD2A1D35980028E20B /* Dest.swift */,
 				ACE94FC02A1D40050028E20B /* AppleColorView.swift */,
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7CC64D2A1EA988007EF962 /* OnReceiveView.swift in Sources */,
 				ACE94FBC2A1D2BA40028E20B /* AppDelegate.swift in Sources */,
 				ACE94FC12A1D40050028E20B /* AppleColorView.swift in Sources */,
 				ACE94FBE2A1D35980028E20B /* Dest.swift in Sources */,
