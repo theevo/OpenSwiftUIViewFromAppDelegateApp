@@ -1,8 +1,8 @@
 //
-//  SelectionBasedNavView.swift
-//  OpenSwiftUIViewFromAppDelegate
+// Migrating to new navigation types
+// From Apple
 //
-//  Created by Theo Vora on 5/23/23.
+// https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types
 //
 
 import SwiftUI

@@ -1,8 +1,7 @@
 //
-//  AppleColorView.swift
-//  OpenSwiftUIViewFromAppDelegate
-//
-//  Created by Theo Vora on 5/23/23.
+// Migrating to new navigation types
+// From Apple
+// https://developer.apple.com/documentation/swiftui/migrating-to-new-navigation-types
 //
 
 import SwiftUI

@@ -1,8 +1,7 @@
 //
-//  DeprecatedNavigationView.swift
-//  OpenSwiftUIViewFromAppDelegate
+//  SwiftUI - Open a specific View when user opens a Push Notification
 //
-//  Created by Theo Vora on 5/23/23.
+//  https://stackoverflow.com/questions/66283978/swiftui-open-a-specific-view-when-user-opens-a-push-notification
 //
 
 import SwiftUI
