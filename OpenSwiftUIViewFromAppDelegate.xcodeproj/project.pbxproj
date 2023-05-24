@@ -19,6 +19,7 @@
 		ACE94FBE2A1D35980028E20B /* Dest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94FBD2A1D35980028E20B /* Dest.swift */; };
 		ACE94FC12A1D40050028E20B /* AppleColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94FC02A1D40050028E20B /* AppleColorView.swift */; };
 		ACE94FC32A1D55A20028E20B /* ColorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94FC22A1D55A20028E20B /* ColorDetail.swift */; };
+		ACE94FC52A1D5D2C0028E20B /* SelectionBasedNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94FC42A1D5D2C0028E20B /* SelectionBasedNavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		ACE94FBF2A1D37AB0028E20B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ACE94FC02A1D40050028E20B /* AppleColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleColorView.swift; sourceTree = "<group>"; };
 		ACE94FC22A1D55A20028E20B /* ColorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetail.swift; sourceTree = "<group>"; };
+		ACE94FC42A1D5D2C0028E20B /* SelectionBasedNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionBasedNavView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				ACE94F912A1D2B0C0028E20B /* ContentView.swift */,
 				ACE94FBD2A1D35980028E20B /* Dest.swift */,
 				ACE94FC02A1D40050028E20B /* AppleColorView.swift */,
+				ACE94FC42A1D5D2C0028E20B /* SelectionBasedNavView.swift */,
 				ACE94FC22A1D55A20028E20B /* ColorDetail.swift */,
 				ACE94F932A1D2B0D0028E20B /* Assets.xcassets */,
 				ACE94F952A1D2B0D0028E20B /* Preview Content */,
@@ -277,6 +280,7 @@
 				ACE94FBC2A1D2BA40028E20B /* AppDelegate.swift in Sources */,
 				ACE94FC12A1D40050028E20B /* AppleColorView.swift in Sources */,
 				ACE94FBE2A1D35980028E20B /* Dest.swift in Sources */,
+				ACE94FC52A1D5D2C0028E20B /* SelectionBasedNavView.swift in Sources */,
 				ACE94FBA2A1D2B4C0028E20B /* AppState.swift in Sources */,
 				ACE94F922A1D2B0C0028E20B /* ContentView.swift in Sources */,
 				ACE94FC32A1D55A20028E20B /* ColorDetail.swift in Sources */,
