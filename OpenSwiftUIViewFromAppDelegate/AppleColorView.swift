@@ -14,6 +14,10 @@ struct AppleColorView: View {
     var body: some View {
         NavigationStack(path: $path) {
             VStack {
+                HStack {
+                    Text("path =")
+                    Text("\(path.description)")
+                }
                 Text("Insert anything here")
                     .font(.italic(.body)())
                 Text("Here's what really matters:")
