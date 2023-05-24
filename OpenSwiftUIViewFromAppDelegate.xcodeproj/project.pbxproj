@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ACE94F902A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94F8F2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift */; };
-		ACE94F922A1D2B0C0028E20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94F912A1D2B0C0028E20B /* ContentView.swift */; };
+		ACE94F922A1D2B0C0028E20B /* DeprecatedNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94F912A1D2B0C0028E20B /* DeprecatedNavigationView.swift */; };
 		ACE94F942A1D2B0D0028E20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE94F932A1D2B0D0028E20B /* Assets.xcassets */; };
 		ACE94F972A1D2B0D0028E20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACE94F962A1D2B0D0028E20B /* Preview Assets.xcassets */; };
 		ACE94FA12A1D2B0D0028E20B /* OpenSwiftUIViewFromAppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE94FA02A1D2B0D0028E20B /* OpenSwiftUIViewFromAppDelegateTests.swift */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		ACE94F8C2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSwiftUIViewFromAppDelegate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE94F8F2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSwiftUIViewFromAppDelegateApp.swift; sourceTree = "<group>"; };
-		ACE94F912A1D2B0C0028E20B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ACE94F912A1D2B0C0028E20B /* DeprecatedNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeprecatedNavigationView.swift; sourceTree = "<group>"; };
 		ACE94F932A1D2B0D0028E20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACE94F962A1D2B0D0028E20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACE94F9C2A1D2B0D0028E20B /* OpenSwiftUIViewFromAppDelegateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSwiftUIViewFromAppDelegateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +111,7 @@
 				ACE94F8F2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift */,
 				ACE94FB92A1D2B4C0028E20B /* AppState.swift */,
 				ACE94FBB2A1D2BA40028E20B /* AppDelegate.swift */,
-				ACE94F912A1D2B0C0028E20B /* ContentView.swift */,
+				ACE94F912A1D2B0C0028E20B /* DeprecatedNavigationView.swift */,
 				ACE94FBD2A1D35980028E20B /* Dest.swift */,
 				ACE94FC02A1D40050028E20B /* AppleColorView.swift */,
 				ACE94FC42A1D5D2C0028E20B /* SelectionBasedNavView.swift */,
@@ -282,7 +282,7 @@
 				ACE94FBE2A1D35980028E20B /* Dest.swift in Sources */,
 				ACE94FC52A1D5D2C0028E20B /* SelectionBasedNavView.swift in Sources */,
 				ACE94FBA2A1D2B4C0028E20B /* AppState.swift in Sources */,
-				ACE94F922A1D2B0C0028E20B /* ContentView.swift in Sources */,
+				ACE94F922A1D2B0C0028E20B /* DeprecatedNavigationView.swift in Sources */,
 				ACE94FC32A1D55A20028E20B /* ColorDetail.swift in Sources */,
 				ACE94F902A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DeprecatedNavigationView.swift
 //  OpenSwiftUIViewFromAppDelegate
 //
 //  Created by Theo Vora on 5/23/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DeprecatedNavigationView: View {
     @ObservedObject var appState = AppState.shared
     @State var navigate = false
     
@@ -19,23 +19,26 @@ struct ContentView: View {
                 appState.navigateToView = nil
             }
         }
-
+        
     }
     
     var body: some View {
-        NavigationView {
+        NavigationView { // deprecated
             Text("My content")
-                .overlay(NavigationLink(destination:
-                                            Dest(message: appState.navigateToView ?? ""),
-                                        isActive: pushNavigationBinding) {
-                    EmptyView()
-                })
+                .overlay(
+                    NavigationLink( // init(destination:isActive:label:) deprecated
+                        destination:
+                            Dest(message: appState.navigateToView ?? ""),
+                        isActive: pushNavigationBinding) {
+                            EmptyView()
+                        }
+                )
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DeprecatedNavigationView()
     }
 }
