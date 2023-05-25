@@ -7,6 +7,19 @@
 
 import SwiftUI
 
+enum MyViewModel {
+    
+    @ViewBuilder
+    static func viewFor(i: Int) -> some View {
+        switch i {
+        case 0:
+            SettingsView()
+        default:
+            Text("Detail for \(i)")
+        }
+    }
+}
+
 struct SettingsView: View {
     var body: some View {
         Text("Welcome to Settings")
@@ -23,12 +36,7 @@ struct MyNavView: View {
                 NavigationLink("Row \(num)", value: num)
             })
             .navigationDestination(for: Int.self, destination: { i in
-                switch i {
-                case 0:
-                    SettingsView()
-                default:
-                    Text("Detail for \(i)")
-                }
+                MyViewModel.viewFor(i: i)
             })
             .navigationTitle("A bunch of numbers")
         }
