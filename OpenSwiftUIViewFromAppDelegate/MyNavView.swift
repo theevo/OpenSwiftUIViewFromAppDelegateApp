@@ -7,16 +7,28 @@
 
 import SwiftUI
 
+struct SettingsView: View {
+    var body: some View {
+        Text("Welcome to Settings")
+    }
+}
+
 struct MyNavView: View {
+    @State private var onTheStack: [Int] = [0]
     let numbers: [Int] = Array(1...25)
     
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $onTheStack) {
             List(numbers, id: \.self, rowContent: { num in
                 NavigationLink("Row \(num)", value: num)
             })
             .navigationDestination(for: Int.self, destination: { i in
-                Text("Detail for \(i)")
+                switch i {
+                case 0:
+                    SettingsView()
+                default:
+                    Text("Detail for \(i)")
+                }
             })
             .navigationTitle("A bunch of numbers")
         }
