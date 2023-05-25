@@ -15,6 +15,9 @@ struct MyNavView: View {
             List(numbers, id: \.self, rowContent: { num in
                 NavigationLink("Row \(num)", value: num)
             })
+            .navigationDestination(for: Int.self, destination: { i in
+                Text("Detail for \(i)")
+            })
             .navigationTitle("A bunch of numbers")
         }
     }
