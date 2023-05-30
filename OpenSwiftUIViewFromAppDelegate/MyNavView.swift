@@ -51,11 +51,11 @@ struct UhOhView: View {
 }
 
 struct MyNavView: View {
-    @State private var onTheStack: [Route] = [.UhOh]
+    @ObservedObject var appState = AppStateUsingRoutes.shared
     let routes: [Route] = [.Settings, .Results]
     
     var body: some View {
-        NavigationStack(path: $onTheStack) {
+        NavigationStack(path: $appState.routesOnStack) {
             List(routes, id: \.self, rowContent: { route in
                 NavigationLink("\(route.rawValue)", value: route)
             })

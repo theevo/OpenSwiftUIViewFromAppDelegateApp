@@ -11,3 +11,8 @@ class AppState: ObservableObject {
     static let shared = AppState()
     @Published var navigateToView: String?
 }
+
+class AppStateUsingRoutes: ObservableObject {
+    static let shared = AppStateUsingRoutes()
+    @Published var routesOnStack: [Route] = []
+}
