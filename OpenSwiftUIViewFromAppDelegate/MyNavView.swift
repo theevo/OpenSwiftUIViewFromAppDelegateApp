@@ -7,38 +7,62 @@
 
 import SwiftUI
 
-enum MyViewModel {
-    
-    @ViewBuilder
-    static func viewFor(i: Int) -> some View {
-        switch i {
-        case 0:
+/// It's just like `Colors` 😄🎨
+enum Route: String, Hashable {
+    case Settings
+    case Results
+    case UhOh
+}
+
+extension Route: View {
+    var body: some View {
+        switch self {
+        case .Settings:
             SettingsView()
-        default:
-            Text("Detail for \(i)")
+        case .Results:
+            ResultsView()
+        case .UhOh:
+            UhOhView(errorText: "404")
         }
+    }
+}
+
+struct ResultsView: View {
+    var body: some View {
+        Text("Greetings, Program. You are viewing Results. 🔢")
     }
 }
 
 struct SettingsView: View {
     var body: some View {
-        Text("Welcome to Settings")
+        Text("Welcome to Settings, Tron 🥏")
+    }
+}
+
+struct UhOhView: View {
+    var errorText: String
+    var body: some View {
+        VStack {
+            Text("DM a screenshot of this for a coupon code @theevo@iosdev.space")
+            Text("Error: \(errorText)")
+        }
+        .navigationTitle("Uh oh!")
     }
 }
 
 struct MyNavView: View {
-    @State private var onTheStack: [Int] = [0]
-    let numbers: [Int] = Array(1...25)
+    @State private var onTheStack: [Route] = [.UhOh]
+    let routes: [Route] = [.Settings, .Results]
     
     var body: some View {
         NavigationStack(path: $onTheStack) {
-            List(numbers, id: \.self, rowContent: { num in
-                NavigationLink("Row \(num)", value: num)
+            List(routes, id: \.self, rowContent: { route in
+                NavigationLink("\(route.rawValue)", value: route)
             })
-            .navigationDestination(for: Int.self, destination: { i in
-                MyViewModel.viewFor(i: i)
+            .navigationDestination(for: Route.self, destination: { route in
+                route.body
             })
-            .navigationTitle("A bunch of numbers")
+            .navigationTitle("My routes")
         }
     }
 }
