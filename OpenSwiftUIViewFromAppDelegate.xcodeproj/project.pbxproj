@@ -90,6 +90,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC51477D2A28FDEE000CF39D /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				ACE94FC02A1D40050028E20B /* AppleColorView.swift */,
+				ACE94FC22A1D55A20028E20B /* ColorDetail.swift */,
+				ACE94FC42A1D5D2C0028E20B /* SelectionBasedNavView.swift */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		AC51477E2A28FE59000CF39D /* StackOverflow */ = {
+			isa = PBXGroup;
+			children = (
+				ACE94F912A1D2B0C0028E20B /* DeprecatedNavigationView.swift */,
+				ACE94FBD2A1D35980028E20B /* Dest.swift */,
+				AC7CC64C2A1EA988007EF962 /* OnReceiveView.swift */,
+			);
+			path = StackOverflow;
+			sourceTree = "<group>";
+		};
+		AC51477F2A28FE8C000CF39D /* MyNavStack */ = {
+			isa = PBXGroup;
+			children = (
+				AC7CC6502A1FAC2B007EF962 /* MyNavView.swift */,
+			);
+			path = MyNavStack;
+			sourceTree = "<group>";
+		};
+		AC5147802A28FF2D000CF39D /* HackingWithSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AC7CC64E2A1EB4C0007EF962 /* ChangeView.swift */,
+			);
+			path = HackingWithSwift;
+			sourceTree = "<group>";
+		};
 		ACE94F832A1D2B0C0028E20B = {
 			isa = PBXGroup;
 			children = (
@@ -114,17 +150,13 @@
 		ACE94F8E2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				AC51477F2A28FE8C000CF39D /* MyNavStack */,
+				AC5147802A28FF2D000CF39D /* HackingWithSwift */,
+				AC51477D2A28FDEE000CF39D /* Apple */,
+				AC51477E2A28FE59000CF39D /* StackOverflow */,
 				ACE94F8F2A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift */,
 				ACE94FB92A1D2B4C0028E20B /* AppState.swift */,
 				ACE94FBB2A1D2BA40028E20B /* AppDelegate.swift */,
-				AC7CC64C2A1EA988007EF962 /* OnReceiveView.swift */,
-				ACE94F912A1D2B0C0028E20B /* DeprecatedNavigationView.swift */,
-				ACE94FBD2A1D35980028E20B /* Dest.swift */,
-				ACE94FC02A1D40050028E20B /* AppleColorView.swift */,
-				AC7CC6502A1FAC2B007EF962 /* MyNavView.swift */,
-				ACE94FC42A1D5D2C0028E20B /* SelectionBasedNavView.swift */,
-				ACE94FC22A1D55A20028E20B /* ColorDetail.swift */,
-				AC7CC64E2A1EB4C0007EF962 /* ChangeView.swift */,
 				ACE94F932A1D2B0D0028E20B /* Assets.xcassets */,
 				ACE94F952A1D2B0D0028E20B /* Preview Content */,
 			);
