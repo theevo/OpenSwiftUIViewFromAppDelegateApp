@@ -7,9 +7,22 @@
 
 import SwiftUI
 
+struct Card {
+    var prompt: String
+    var answer: String
+}
+
+extension Card: CustomStringConvertible {
+    var description: String {
+        "Card with prompt \(prompt)"
+    }
+}
+
+extension Card: Hashable { }
+
 /// It's just like `Colors` 😄🎨
 enum Route {
-    case card(card: String)
+    case card(card: Card)
     case settings
     case results
     case uhOh
@@ -34,7 +47,7 @@ extension Route: View {
     var body: some View {
         switch self {
         case .card(let card):
-            Text(card)
+            Text(card.description)
         case .settings:
             SettingsView()
         case .results:

@@ -12,7 +12,8 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             print("✈️ Dispatching")
-            AppStateUsingRoutes.shared.routesOnStack = [.card(card: "Joker 🃏")]
+            let card = Card(prompt: "Joker 🃏", answer: "because I'm not batman")
+            AppStateUsingRoutes.shared.routesOnStack = [.card(card: card)]
         }
         
         return true
