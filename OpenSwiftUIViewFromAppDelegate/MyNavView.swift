@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// It's just like `Colors` 😄🎨
-enum Route: String, Hashable {
+enum Route: String {
     case Settings
     case Results
     case UhOh
