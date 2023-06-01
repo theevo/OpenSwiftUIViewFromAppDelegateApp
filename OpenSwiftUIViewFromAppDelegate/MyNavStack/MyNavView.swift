@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MyNavView: View {
     @ObservedObject var appState = AppStateUsingRoutes.shared
-    let routes: [Route] = [.settings, .results]
+    let routes: [Route] = [Card.sample.route, .settings, .results]
     
     var body: some View {
         NavigationStack(path: $appState.routesOnStack) {
