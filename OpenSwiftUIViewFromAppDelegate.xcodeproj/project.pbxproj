@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC5147822A28FF9B000CF39D /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5147812A28FF9B000CF39D /* Route.swift */; };
+		AC5147842A28FFE2000CF39D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5147832A28FFE2000CF39D /* Card.swift */; };
+		AC5147862A29003A000CF39D /* Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5147852A29003A000CF39D /* Subviews.swift */; };
 		AC7CC64D2A1EA988007EF962 /* OnReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CC64C2A1EA988007EF962 /* OnReceiveView.swift */; };
 		AC7CC64F2A1EB4C0007EF962 /* ChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CC64E2A1EB4C0007EF962 /* ChangeView.swift */; };
 		AC7CC6512A1FAC2B007EF962 /* MyNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7CC6502A1FAC2B007EF962 /* MyNavView.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC5147812A28FF9B000CF39D /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		AC5147832A28FFE2000CF39D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		AC5147852A29003A000CF39D /* Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subviews.swift; sourceTree = "<group>"; };
 		AC7CC64C2A1EA988007EF962 /* OnReceiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnReceiveView.swift; sourceTree = "<group>"; };
 		AC7CC64E2A1EB4C0007EF962 /* ChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeView.swift; sourceTree = "<group>"; };
 		AC7CC6502A1FAC2B007EF962 /* MyNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavView.swift; sourceTree = "<group>"; };
@@ -114,6 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				AC7CC6502A1FAC2B007EF962 /* MyNavView.swift */,
+				AC5147812A28FF9B000CF39D /* Route.swift */,
+				AC5147832A28FFE2000CF39D /* Card.swift */,
+				AC5147852A29003A000CF39D /* Subviews.swift */,
 			);
 			path = MyNavStack;
 			sourceTree = "<group>";
@@ -321,12 +330,15 @@
 				AC7CC64D2A1EA988007EF962 /* OnReceiveView.swift in Sources */,
 				ACE94FBC2A1D2BA40028E20B /* AppDelegate.swift in Sources */,
 				AC7CC6512A1FAC2B007EF962 /* MyNavView.swift in Sources */,
+				AC5147862A29003A000CF39D /* Subviews.swift in Sources */,
 				ACE94FC12A1D40050028E20B /* AppleColorView.swift in Sources */,
+				AC5147842A28FFE2000CF39D /* Card.swift in Sources */,
 				ACE94FBE2A1D35980028E20B /* Dest.swift in Sources */,
 				AC7CC64F2A1EB4C0007EF962 /* ChangeView.swift in Sources */,
 				ACE94FC52A1D5D2C0028E20B /* SelectionBasedNavView.swift in Sources */,
 				ACE94FBA2A1D2B4C0028E20B /* AppState.swift in Sources */,
 				ACE94F922A1D2B0C0028E20B /* DeprecatedNavigationView.swift in Sources */,
+				AC5147822A28FF9B000CF39D /* Route.swift in Sources */,
 				ACE94FC32A1D55A20028E20B /* ColorDetail.swift in Sources */,
 				ACE94F902A1D2B0C0028E20B /* OpenSwiftUIViewFromAppDelegateApp.swift in Sources */,
 			);
