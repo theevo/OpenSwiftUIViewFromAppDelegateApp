@@ -9,6 +9,7 @@ import SwiftUI
 
 /// It's just like `Colors` 😄🎨
 enum Route {
+    case card(card: String)
     case settings
     case results
     case uhOh
@@ -17,6 +18,8 @@ enum Route {
 extension Route: CustomStringConvertible {
     var description: String {
         switch self {
+        case .card:
+            return "A card"
         case .settings:
             return "Settings"
         case .results:
@@ -30,6 +33,8 @@ extension Route: CustomStringConvertible {
 extension Route: View {
     var body: some View {
         switch self {
+        case .card(let card):
+            Text(card)
         case .settings:
             SettingsView()
         case .results:
@@ -39,6 +44,8 @@ extension Route: View {
         }
     }
 }
+
+extension Route: Hashable { }
 
 struct ResultsView: View {
     var body: some View {
