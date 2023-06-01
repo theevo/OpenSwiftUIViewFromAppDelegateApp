@@ -7,6 +7,23 @@
 
 import SwiftUI
 
+struct RouteView: View {
+    var route: Route
+    
+    var body: some View {
+        switch route {
+        case .card(let card):
+            CardView(card: card)
+        case .settings:
+            SettingsView()
+        case .results:
+            ResultsView()
+        case .uhOh:
+            UhOhView(errorText: "404")
+        }
+    }
+}
+
 struct CardView: View {
     var card: Card
     var body: some View {

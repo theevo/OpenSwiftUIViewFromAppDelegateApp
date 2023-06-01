@@ -17,7 +17,7 @@ struct MyNavView: View {
                 NavigationLink("\(route.description)", value: route)
             })
             .navigationDestination(for: Route.self, destination: { route in
-                route.body
+                RouteView(route: route)
             })
             .navigationTitle("My routes")
         }
