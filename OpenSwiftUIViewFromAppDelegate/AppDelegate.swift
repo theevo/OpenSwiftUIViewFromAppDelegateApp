@@ -12,7 +12,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             print("✈️ Dispatching")
-            AppStateUsingRoutes.shared.routesOnStack = [.Results]
+            AppStateUsingRoutes.shared.routesOnStack = [.results]
         }
         
         return true

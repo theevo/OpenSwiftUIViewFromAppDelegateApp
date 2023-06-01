@@ -8,20 +8,33 @@
 import SwiftUI
 
 /// It's just like `Colors` 😄🎨
-enum Route: String {
-    case Settings
-    case Results
-    case UhOh
+enum Route {
+    case settings
+    case results
+    case uhOh
+}
+
+extension Route: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .settings:
+            return "Settings"
+        case .results:
+            return "Results"
+        case .uhOh:
+            return "UhOh"
+        }
+    }
 }
 
 extension Route: View {
     var body: some View {
         switch self {
-        case .Settings:
+        case .settings:
             SettingsView()
-        case .Results:
+        case .results:
             ResultsView()
-        case .UhOh:
+        case .uhOh:
             UhOhView(errorText: "404")
         }
     }
@@ -52,12 +65,12 @@ struct UhOhView: View {
 
 struct MyNavView: View {
     @ObservedObject var appState = AppStateUsingRoutes.shared
-    let routes: [Route] = [.Settings, .Results]
+    let routes: [Route] = [.settings, .results]
     
     var body: some View {
         NavigationStack(path: $appState.routesOnStack) {
             List(routes, id: \.self, rowContent: { route in
-                NavigationLink("\(route.rawValue)", value: route)
+                NavigationLink("\(route.description)", value: route)
             })
             .navigationDestination(for: Route.self, destination: { route in
                 route.body
