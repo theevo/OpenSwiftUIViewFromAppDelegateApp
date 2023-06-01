@@ -47,7 +47,7 @@ extension Route: View {
     var body: some View {
         switch self {
         case .card(let card):
-            Text(card.description)
+            CardView(card: card)
         case .settings:
             SettingsView()
         case .results:
@@ -59,6 +59,16 @@ extension Route: View {
 }
 
 extension Route: Hashable { }
+
+struct CardView: View {
+    var card: Card
+    var body: some View {
+        VStack {
+            Text(card.prompt)
+            Text(card.answer)
+        }
+    }
+}
 
 struct ResultsView: View {
     var body: some View {
